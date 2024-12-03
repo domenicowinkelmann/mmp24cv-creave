@@ -1,0 +1,60 @@
+body {
+    background-color: #f3cce7;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: #FF9F55;
+  }
+
+.info-box {
+    max-width: 1200px;
+    text-align: left;
+}
+
+/* Event-Sektion */
+.events {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Event-Box Styling */
+.event-box {
+  background-color: #FF9F55;
+  color: #f3cce7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.event-box:hover {
+  transform: scale(1.05);
+}
+
+.event-box h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #f3cce7;
+}
+
+.event-box p {
+  margin: 5px;
+}
+
+/* Button Styling */
+.event-box button {
+  background-color: #f3cce7;
+  color: #FF9F55;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.event-box button:hover {
+  background-color: #056147;
+}
