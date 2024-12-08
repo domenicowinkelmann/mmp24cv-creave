@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Futura, sans-serif;
     background-color: #F3CCE7;
     margin: 0;
@@ -6,7 +6,7 @@ body{
     line-height: 1.6;
     text-decoration: none;
 }
-   
+
 h1 {
     text-align: center;
     margin-top: 10px;
@@ -25,14 +25,19 @@ h2 {
     padding: 20px;
 }
 
+.abos-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .abo {
     background-color: #056147;
-    color:white;
+    color: white;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -42,20 +47,21 @@ h2 {
 }
 
 .abo-image {
-    display: block;
+    display:block;
     margin: 0 auto 15px;
     max-width: 80px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .contact-form-container {
     background-color: #056147;
     color: white;
-    padding: 30px;
+    padding:20px;
     border-radius: 15px;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px 20px;
+    box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,7 +80,8 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     margin-top: 5px;
     padding: 10px;
     border: none;
@@ -106,6 +113,36 @@ button {
 }
 
 button:hover {
-    background-color: #056147;
-    color: #F3CCE7;
+    background-color: #ffffff;
+    color: #056147;
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+    .abos-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px; /* Abstand zwischen den Abos */
+        justify-content: space-between; /* Abos glichmässig verteile */
+        align-items: flex-start;
+        flex-wrap: nowrap; /* Kein Umbruch, Abos bleiben in einer Reihe */
+    }
+
+    .abo {
+        flex: 1; /* Gleiche Breite für alle Abos */
+        max-width: calc(33.33% - 20px); /* Jede Box nimmt ein Drittel der Breite minus Abstand */
+    }
+
+    .abos-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Abstand zwischen den Aboboxen */
+        width: 100%;
+    }
+
+    .contact-form-container {
+        max-width: 1000px; /* Gleiche Breite wie Abos */
+        margin: 40px auto 0; /* Abstand nach oben und zentriert */
+    }
 }
