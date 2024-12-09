@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Header */
+  /* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F7F3ED;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .logo img{
+    height: 34px;
+  } */
+
+  h2{
+    font-size: 50px;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #FC6C20; /* Orange */
+  }
+
+  section{
+    min-height: 100vh;
+    padding: 90px;
+  }
+  .container-half{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* intro Section */
+  .intro {
+    display: flex;
+    align-items: center;
+    background-color: #F7F3ED;
+  }
+  
+  .intro-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .intro-text h1 {
+    font-size: 60px;
+    color: #056147; /* Green */
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FC6C20; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cta-button:hover {
+    background-color: #d85d1a; /* Slightly darker orange for hover */
+  }
+  
+  .intro-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 60px;
+    /* margin: 20px; */
+  }
+  
+  /* Creative Space Section */
+  .creative-space {
+    display: flex;
+    background-color: #056147; /* Green */
+    color: white;
+  }
+  
+  .space-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 60px;
+    margin: 0px 20px;
+  }
+  
+  .space-text {
+    /* margin-left: 80px; */
+  }
+  
+  .space-text h2 {
+    /* font-size: 28px; */
+    margin-bottom: 20px;
+  }
+  
+  .space-text p {
+    margin-bottom: 15px;
+  }
+  
+  /* Steps Section */
+  .steps {
+    background-color: #F3CCE7; /* Pink */
+    text-align: left;
+  }
+
+  .container-steps{
+    display: block;
+  }
+  
+  .steps h2 {
+    color: #FC6C20; /* Orange */
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    margin-bottom: 20px;
+  }
+  
+  .step h3 {
+    color: #FC6C20; /* Orange */
+  }
+  
+  .step p {
+    margin: 10px 0;
+  }
+  
+  button.cta-button {
+    background-color: #FC6C20; /* Orange */
+    display: block;
+    margin-top: 20px;
+  }
+  
+  button.cta-button:hover {
+    background-color: #d85d1a; /* Slightly darker orange for hover */
+  }
+  

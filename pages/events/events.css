@@ -1,0 +1,100 @@
+body {
+    background-color: #f3cce7;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: #FF9F55;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .info-box {
+    max-width: 1200px; /* Begrenzung für Desktop */
+    text-align: center;
+    width: 90%; /* Anpassung für Mobilgeräte */
+  }
+
+  img {
+    display: block;
+    width: 100%; /* Das Bild füllt die Breite des Containers */
+    max-width: 600px; /* Optional: maximale Breite */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    margin: 20px auto; /* Zentriert das Bild */
+  }
+
+  @media (max width: 768px) {
+    .events {
+      flex-direction: column; /* stapelt die Boxen */
+      align-items: center; /*zentriert die gestapelten Boxen */
+    }
+  
+    .event-box {
+      width: 300px; /*Breite der Boxen auf mobilen Geräten */
+      max-width: 100% /*verhindert Überbreite */
+    }
+
+    .event-box button {
+      width: 100%; /* füllt die Breite der Box */
+    }
+  }
+
+/* Event-Sektion */
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Event-Box Styling */
+.event-box {
+  background-color: #FF9F55;
+  color: #f3cce7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.event-box:hover {
+  transform: scale(1.05);
+}
+
+.event-box h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #f3cce7;
+}
+
+.event-box p {
+  margin: 20px;
+}
+
+/* Button Styling */
+.event-box button {
+  background-color: #f3cce7;
+  color: #FF9F55;
+  border: none;
+  padding: 12px 24px; /* Grösserer Abstand für Touch-Geräte */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.event-box button:hover {
+  background-color: #056147;
+}
