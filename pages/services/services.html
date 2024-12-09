@@ -3,15 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta name="description" content="A simple HTML template for a webpage.">
-        <meta name="keywords" content="HTML, template, webpage, example"> -->
         <title>My Webpage</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="services.css">
+        <link rel="stylesheet" href="/pages/services/services.css">
     </head>
     <body>
-        <div>
-            <h1>SERVICES</h1>
+        <h1>UNSERE ABOS</h1>
+         <div class="abos-container">
+            <div class="abos-row">
+                <div class="abo">
+                    <img src="IMG/star.png" alt="Star" class="abo-image">
+                    <h2>KLEINER STERN</h2>
+                    <p>Klein aber fein – Mit unserem Abo «Star» gestalten wir in deinem Unternehmen jeden Monat einen Raum.</p>
+                    <h3>pauschal CHF 3'000.-</h3>
+                </div>
+        
+                <div class="abo">
+                    <img src="IMG/gem.png" alt="Diamant" class="abo-image">
+                    <h2>DIAMANT</h2>
+                    <p>Mit unserem Premiumabo «Diamant» wird das Thema deine kreative Höhle alle zwei Wochen gewechselt.</p>
+                    <h3>pauschal CHF 5'000.-</h3>
+                </div>
+        
+                <div class="abo">
+                    <img src="IMG/woman-shrugging.png" alt="Frau" class="abo-image">
+                    <h2>ÄHM, KEINE AHNUNG?</h2>
+                    <p>Bist du noch nicht sicher, was du genau brauchst? Dann beraten wir dich gerne. Fülle einfach das Kontaktformular unten aus und wir melden uns bei dir.</p>
+                </div>
+            </div>
         </div>
-    </body>
-</html>
+        
+        <!-- Kontaktformular -->
+        <div class="contact-form-container">
+            <h1>Kontaktformular</h1>
+            <form action="#" method="post">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="vorname">Vorname*</label>
+                <input type="text" id="vorname" name="vorname" required>
+        
+                <label for="email">E-Mail*</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Nachricht*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+        
