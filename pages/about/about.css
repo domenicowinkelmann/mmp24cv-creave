@@ -85,7 +85,7 @@ div{color: #a7baf2;
 border-radius: 12px;
 display: flex;
 flex-wrap: wrap;
-max-width: 90%;
+max-width: 80%;
 font-size: 18px;
 color: #8C0303;
 background-color: #b4c7ff;
@@ -128,7 +128,6 @@ margin: 40px auto; /* Center the box horizontally on the page */
     background-color: #8C0303;
     height: auto;
     width: fit-content; /*ADJUSTED*/
-    border: 2px solid #8C0303;
     border-radius: 100px;
     text-align: center;
     margin: auto;
@@ -172,6 +171,16 @@ margin: 40px auto; /* Center the box horizontally on the page */
     text-decoration: none;
     color: #8C0303;
 }
+
+
+.kontaktformular:hover{
+    background-color: #680101;
+    transform: scale(1.05);
+
+}
+
+
+
 
 @media (max-width: 768px) {
     .teambox {
