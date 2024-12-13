@@ -4,24 +4,26 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  
-  /* Header */
-  /* .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #F7F3ED;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .logo img{
-    height: 34px;
-  } */
 
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.04);
+    }
+  }
+
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateX(0); 
+    }
+    50% {
+      transform: translateX(-10px); 
+    }
+  }
+
+  
   h2{
     font-size: 50px;
   }
@@ -41,55 +43,68 @@
     min-height: 100vh;
     padding: 90px;
   }
-  .container-half{
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+    
   /* intro Section */
   .intro {
     display: flex;
     align-items: center;
     background-color: #F7F3ED;
+    position: relative;
+    justify-content: center;
   }
   
   .intro-text {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     flex: 1;
   }
-  
-  .intro-text h1 {
-    font-size: 60px;
-    color: #056147; /* Green */
+
+  .container-half{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+      width: 50%;
+    }
   }
+
+  .title-home{
+    display: inline-block; /* Important for transform animations */
+    font-weight: bold;
+    font-size: 100px;
+    color: #056147; /* Green */
+    animation: heartbeat 4s infinite;
+  }  
+
+  .container-arrows{
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+    rotate: 90deg;
+    font-size: 100px;
+    color: #FC6C20;
+    animation: moveUpDown 2s infinite; /* 1 second duration, loops infinitely */
+  }  
   
   .cta-button {
+    display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 40px;
     background-color: #FC6C20; /* Orange */
     color: white;
     border: none;
     border-radius: 60px;
     cursor: pointer;
     font-size: 16px;
+    transition: transform 0.4s ease-in-out;
+    text-decoration: none;
   }
   
   .cta-button:hover {
-    background-color: #d85d1a; /* Slightly darker orange for hover */
+    transform: scale(1.1);
+
   }
-  
-  .intro-image img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 60px;
-    /* margin: 20px; */
-  }
+
   
   /* Creative Space Section */
   .creative-space {
@@ -103,10 +118,6 @@
     max-width: 500px;
     border-radius: 60px;
     margin: 0px 20px;
-  }
-  
-  .space-text {
-    /* margin-left: 80px; */
   }
   
   .space-text h2 {
@@ -144,14 +155,5 @@
   .step p {
     margin: 10px 0;
   }
-  
-  button.cta-button {
-    background-color: #FC6C20; /* Orange */
-    display: block;
-    margin-top: 20px;
-  }
-  
-  button.cta-button:hover {
-    background-color: #d85d1a; /* Slightly darker orange for hover */
-  }
+
   
