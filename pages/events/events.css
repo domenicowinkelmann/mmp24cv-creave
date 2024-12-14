@@ -1,100 +1,295 @@
-body {
-    background-color: #f3cce7;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    color: #FF9F55;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: futura, sans-serif;
+}
 
-  h1, h2, h3 {
-    text-align: center;
-  }
+section{
+  min-height: 80vh;
+  padding: 60px 20px
+}
+.container-half{
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  p {
-    font-size: 16px;
-  }
+/* intro Section */
+.intro {
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung des Inhalts */
+  justify-content: center; /* Optionale horizontale Zentrierung */
+  background-color: #F7F3ED;
+  height: 100vh;
+  gap: 20px; /* Platz zwischen Text und Bild */
+}
 
-  .info-box {
-    max-width: 1200px; /* Begrenzung für Desktop */
-    text-align: center;
-    width: 90%; /* Anpassung für Mobilgeräte */
-  }
+.intro-text {
+  display: flex;
+  flex-direction: column; /* Text-Inhalt wird vertikal gestapelt */
+  justify-content: center; /* Vertikale Zentrierung innerhalb des Textcontainers */
+  align-items: flex-start; /* Linksbündige Ausrichtung des Texts */
+  text-align: left; /* Textinhalt bleibt linksbündig */
+  flex: 1; /* Nimmt gleichmäßig Platz ein */
+}
 
-  img {
-    display: block;
-    width: 100%; /* Das Bild füllt die Breite des Containers */
-    max-width: 600px; /* Optional: maximale Breite */
-    height: auto; /* Beibehaltung des Seitenverhältnisses */
-    margin: 20px auto; /* Zentriert das Bild */
-  }
+.intro-text h1 {
+  font-size: 50px;
+  color: #FC6C20; /* Orange */
+  margin-bottom: 20px; /* Platz zwischen Überschrift und Absatz */
+}
 
-  @media (max width: 768px) {
-    .events {
-      flex-direction: column; /* stapelt die Boxen */
-      align-items: center; /*zentriert die gestapelten Boxen */
-    }
-  
-    .event-box {
-      width: 300px; /*Breite der Boxen auf mobilen Geräten */
-      max-width: 100% /*verhindert Überbreite */
-    }
+.intro-text p {
+  font-size: 24px;
+  color: black; /* Schwarz */
+  line-height: 1.6; /* Lesbarkeit verbessern */
+}
 
-    .event-box button {
-      width: 100%; /* füllt die Breite der Box */
-    }
-  }
+.intro-image img, .space-image img {
+  width: 100%;
+  height: auto; /* Passt die Höhe proportional an */
+  max-width: 800px;
+  max-height: 500px; /* Beide Bilder auf dieselbe maximale Höhe beschränken */
+  border-radius: 60px;
+  object-fit: cover; /* Passt das Bild so an, dass es den Container gleichmäßig ausfüllt */
+}
 
-/* Event-Sektion */
+/* Creative Space Section */
+.creative-space {
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung des Inhalts */
+  justify-content: center; /* Optionale horizontale Zentrierung */
+  background-color: #F3CCE7; /* Pink */
+  height: 100vh;
+  gap: 20px; /* Platz zwischen Text und Bild */
+}
+
+.space-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #FC6C20;
+}
+
+.space-text p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+/* Events Section */
+
 .events {
+  background-color: #F3CCE7; /* Pink */
+  text-align: left;
+  padding: 20px; /* Abstand innen */
+}
+
+.events h2 {
+  color: #FC6C20; /* Orange */
+  margin-bottom: 20px;
+}
+
+.events h1 {
+  color: #FC6C20; /* Orange */
+  text-align: center; /* Zentriert die Überschrift */
+  margin-bottom: 20px; /* Platz zwischen Überschrift und Boxen */
+  font-size: 30px;
+}
+
+.container-events {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Ermöglicht Umbruch der Boxen */
   padding: 20px;
-  flex-wrap: wrap;
+}
+
+.event-subtitle {
+  font-size: 16px; /* Angemessene Schriftgröße */
+  color: #f3cce7; /* Gleiche Farbe wie der Rest des Texts */
+  margin: 10px; /* Platz oberhalb und unterhalb */
 }
 
 /* Event-Box Styling */
 .event-box {
-  background-color: #FF9F55;
+  background-color: #FC6C20;
   color: #f3cce7;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   padding: 20px;
-  width: 300px;
+  width: 350px;
   text-align: center;
   transition: transform 0.3s ease;
+  min-height: 300px;
+  overflow: hidden; /* Schneidet überschüssigen Inhalt ab */
+  display: flex; /* Für bessere vertikale Ausrichtung */
+  flex-direction: column; /* Richtet den Inhalt vertikal aus */
+  justify-content: space-between; /* Verteilt den Inhalt innerhalb der Box */
 }
 
 .event-box:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .event-box h2 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
-  color: #f3cce7;
+margin: 10px;
+font-size: 25px;
+color: #f3cce7;
 }
 
 .event-box p {
-  margin: 20px;
+color: #f3cce7;
 }
 
 /* Button Styling */
 .event-box button {
-  background-color: #f3cce7;
-  color: #FF9F55;
-  border: none;
-  padding: 12px 24px; /* Grösserer Abstand für Touch-Geräte */
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+background-color: #f3cce7;
+color: #FC6C20;
+border: none;
+padding: 12px 24px; /* Größerer Abstand für Touch-Geräte */
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+margin-top: 10px;
+transition: background-color 0.3s;
 }
 
 .event-box button:hover {
-  background-color: #056147;
+background-color: #f5aade;
+}
+
+/* Tablet und Smartphone (bis max-width: 1024px) */
+@media (max-width: 1024px) {
+  section {
+    padding: 30px;
+    height: auto; /* Automatische Höhe */
+  }
+
+  .intro {
+    flex-direction: column; /* Vertikale Anordnung */
+    text-align: center;
+    gap: 20px;
+    height: 80vh;
+  }
+
+  .intro-text {
+    display: flex;
+    flex-direction: column; /* Text bleibt vertikal ausgerichtet */
+    align-items: flex-start; /* Links ausgerichtet */
+    justify-content: center; /* Vertikal zentrieren */
+  }
+  
+  .intro-text h1 {
+    font-size: 28px; /* Überschrift verkleinern */
+    line-height: 1.2; /* Dichtes Line-Height */
+  }
+
+  .intro-text p {
+    font-size: 16px; /* Text verkleinern */
+    line-height: 1.4; /* Dichtes Line-Height */
+  }
+
+  .intro-image img {
+    width: auto; /* Verhindert zu starke Verkleinerung */
+    max-width: 70%; /* Bild hat maximal 70% der Breite */
+    min-width: 300px; /* Mindestens 300px Breite */
+    border-radius: 30px; /* Abgerundete Ecken bleiben */
+  }
+
+  .creative-space {
+    display: flex;
+    flex-direction: column; /* Inhalte untereinander */
+    align-items: center; /* Bild und Text zentriert horizontal ausrichten */
+    justify-content: center;
+    text-align: left; /* Kein zentrierter Text */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .space-text {
+    display: flex;
+    flex-direction: column; /* Text bleibt vertikal ausgerichtet */
+    align-items: flex-start; /* Links ausgerichtet */
+    justify-content: center; /* Vertikal zentrieren */
+  }
+
+  .space-text h2 {
+    font-size: 24px; /* Überschrift skalieren */
+    margin-bottom: 20px;
+    color: #FC6C20;
+  }
+
+  .space-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  .space-image img {
+    width: auto; /* Verhindert zu starke Verkleinerung */
+    max-width: 70%; /* Bild hat maximal 70% der Breite */
+    min-width: 300px; /* Mindestens 300px Breite */
+    border-radius: 30px; /* Abgerundete Ecken bleiben */
+  }
+
+  .events h1 {
+    font-size: 24px; /* Kleinere Überschrift */
+  }
+
+  .event-box h2 {
+    font-size: 20px; /* Kleinere Schrift */
+  }
+
+  .event-box p {
+    font-size: 14px; /* Kleinere Schriftgröße */
+  }
+}
+
+/* Sehr kleine Smartphones (bis max-width: 480px) */
+@media (max-width: 480px) {
+  .intro-text h1 {
+    font-size: 24px; /* Noch kleinere Schriftgröße */
+  }
+  
+  .intro {
+    height: auto; /* Dynamische Höhe basierend auf dem Inhalt */
+    padding: 30px 10px; /* Weniger Platz für kleine Bildschirme */
+  }
+
+  .intro-text p {
+    font-size: 14px;
+  }
+
+  .intro-image img {
+    width: 100%; /* Vollbreite auch auf sehr kleinen Geräten */
+    max-width: none;
+    border-radius: 10;
+  }
+
+  .space-text h2 {
+    font-size: 20px; /* Noch kleinere Überschrift für sehr kleine Smartphones */
+  }
+
+  .space-text p {
+    font-size: 14px; /* Kleinere Schriftgröße */
+  }
+
+  .space-image img {
+    width: 100%; /* Vollbreite auch auf sehr kleinen Geräten */
+    max-width: none;
+    border-radius: 10;
+  }
+
+  .event-box h2 {
+    font-size: 16px;
+  }
+
+  .event-box p {
+    font-size: 12px;
+  }
 }
