@@ -4,52 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Webpage</title>
-        <link rel="stylesheet" href="/pages/services/services.css">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="services.css">
+        <link rel="icon" type="image/x-icon" href="../../assets/images/logos/favicon.ico">
     </head>
     <body>
-        <h1>UNSERE ABOS</h1>
-         <div class="abos-container">
-            <div class="abos-row">
-                <div class="abo">
-                    <img src="IMG/star.png" alt="Star" class="abo-image">
-                    <h2>KLEINER STERN</h2>
-                    <p>Klein aber fein – Mit unserem Abo «Star» gestalten wir in deinem Unternehmen jeden Monat einen Raum.</p>
-                    <h3>pauschal CHF 3'000.-</h3>
-                </div>
+
+        <!-- HEADER NAVIGATION START -->
+        <header class="header">
+            <a class="logo" href="/pages/home/home.html"><img src="../../assets/images/logos/Logo-creave-pink.png" alt="CREAVE-LOGO"></a>
+           
+            <!-- Checkbox for Hamburger Menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+  
+            <nav class="nav">
+              <a href="../home/home.html">Home</a>
+              <a href="../services/services.html">Services</a>
+              <a href="../events/events.html">Events</a>
+              <a href="../about/about.html">Crew</a>
+            </nav>
+          </header>
+          <!-- HEADER NAVIGATION END -->
+
+        <section class="section-abos">
+            <h1>UNSERE ABOS</h1>
+            <div class="abos-container">
+               <div class="abos-row">
+                   <div class="abo">
+                       <img src="IMG/star.png" alt="Star" class="abo-image">
+                       <h2>KLEINER STERN</h2>
+                       <p>Klein aber fein – Mit unserem Abo «Star» gestalten wir in deinem Unternehmen jeden Monat einen Raum.</p>
+                       <h3>pauschal CHF 3'000.-</h3>
+                   </div>
+           
+                   <div class="abo">
+                       <img src="IMG/gem.png" alt="Diamant" class="abo-image">
+                       <h2>DIAMANT</h2>
+                       <p>Mit unserem Premiumabo «Diamant» wird das Thema deine kreative Höhle alle zwei Wochen gewechselt.</p>
+                       <h3>pauschal CHF 5'000.-</h3>
+                   </div>
+           
+                   <div class="abo">
+                       <img src="IMG/woman-shrugging.png" alt="Frau" class="abo-image">
+                       <h2>ÄHM, KEINE AHNUNG?</h2>
+                       <p>Bist du noch nicht sicher, was du genau brauchst? Dann beraten wir dich gerne. Fülle einfach das Kontaktformular unten aus und wir melden uns bei dir.</p>
+                   </div>
+               </div>
+           </div>
+        </section>
         
-                <div class="abo">
-                    <img src="IMG/gem.png" alt="Diamant" class="abo-image">
-                    <h2>DIAMANT</h2>
-                    <p>Mit unserem Premiumabo «Diamant» wird das Thema deine kreative Höhle alle zwei Wochen gewechselt.</p>
-                    <h3>pauschal CHF 5'000.-</h3>
-                </div>
-        
-                <div class="abo">
-                    <img src="IMG/woman-shrugging.png" alt="Frau" class="abo-image">
-                    <h2>ÄHM, KEINE AHNUNG?</h2>
-                    <p>Bist du noch nicht sicher, was du genau brauchst? Dann beraten wir dich gerne. Fülle einfach das Kontaktformular unten aus und wir melden uns bei dir.</p>
-                </div>
+        <section class="section-contact">
+             <!-- Kontaktformular -->
+            <div class="contact-form-container">
+                <h1>KONTAKT</h1>
+                <form action="#" method="post">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="vorname">Vorname*</label>
+                    <input type="text" id="vorname" name="vorname" required>
+            
+                    <label for="email">E-Mail*</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Nachricht*</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <div class="button-submit">
+                    <button type="submit">Absenden</button>
+                </form>
             </div>
-        </div>
-        
-        <!-- Kontaktformular -->
-        <div class="contact-form-container">
-            <h1>Kontaktformular</h1>
-            <form action="#" method="post">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="vorname">Vorname*</label>
-                <input type="text" id="vorname" name="vorname" required>
-        
-                <label for="email">E-Mail*</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Nachricht*</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <div class="button-submit">
-                <button type="submit">Absenden</button>
-            </form>
-        </div>
+        </section>
+       
         

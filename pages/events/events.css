@@ -8,14 +8,27 @@
 
 section{
   min-height: 80vh;
-  padding: 60px 20px
+  /* padding: 60px 20px; */
+  @media screen and (min-width: 900px) {
+    padding: 50px;
+  }
+  @media screen and (min-width: 1300px) {
+    padding: 70px;
+  }
+  @media screen and (min-width: 1500px) {
+    padding: 90px;
+  }
 }
+
 .container-half{
-  width: 50%;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    width: 50%;
+  }
 }
 
 /* intro Section */
@@ -34,7 +47,7 @@ section{
   justify-content: center; /* Vertikale Zentrierung innerhalb des Textcontainers */
   align-items: flex-start; /* Linksbündige Ausrichtung des Texts */
   text-align: left; /* Textinhalt bleibt linksbündig */
-  flex: 1; /* Nimmt gleichmäßig Platz ein */
+  /*flex: 1; /* Nimmt gleichmäßig Platz ein */
 }
 
 .intro-text h1 {
@@ -173,7 +186,7 @@ background-color: #f5aade;
     flex-direction: column; /* Vertikale Anordnung */
     text-align: center;
     gap: 20px;
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .intro-text {
@@ -195,7 +208,7 @@ background-color: #f5aade;
 
   .intro-image img {
     width: auto; /* Verhindert zu starke Verkleinerung */
-    max-width: 70%; /* Bild hat maximal 70% der Breite */
+    /*max-width: 70%; /* Bild hat maximal 70% der Breite */
     min-width: 300px; /* Mindestens 300px Breite */
     border-radius: 30px; /* Abgerundete Ecken bleiben */
   }
@@ -232,7 +245,7 @@ background-color: #f5aade;
 
   .space-image img {
     width: auto; /* Verhindert zu starke Verkleinerung */
-    max-width: 70%; /* Bild hat maximal 70% der Breite */
+    /*max-width: 70%; /* Bild hat maximal 70% der Breite */
     min-width: 300px; /* Mindestens 300px Breite */
     border-radius: 30px; /* Abgerundete Ecken bleiben */
   }
@@ -257,7 +270,7 @@ background-color: #f5aade;
   }
   
   .intro {
-    height: auto; /* Dynamische Höhe basierend auf dem Inhalt */
+    /*height: auto; /* Dynamische Höhe basierend auf dem Inhalt */
     padding: 30px 10px; /* Weniger Platz für kleine Bildschirme */
   }
 
