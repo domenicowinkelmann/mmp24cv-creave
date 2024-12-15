@@ -23,6 +23,17 @@ body {
     height: 34px;
 }
 
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #FC6C20; /* Orange */
+  }
+
 /* nav a {
     color: #fff;
     margin: 0 15px;

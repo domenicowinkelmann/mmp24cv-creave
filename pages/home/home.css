@@ -39,16 +39,6 @@ h2{
   }
 }
 
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.nav a:hover {
-  color: #FC6C20; /* Orange */
-}
 
 section{
   min-height: 100vh;
