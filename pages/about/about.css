@@ -1,35 +1,48 @@
 body{
-    background-color: #a7baf2;
-    color: #8C0303; 
+    background-color: rgb(251, 244, 239) ;
     font-family: Futura;
     font-size: 18px;
     height: 100%;
     margin: 0;
 }
 
-h1{color:#8C0303;
+section{
+    min-height: 100vh;
+    padding: 90px;
+  }
+
+
+h1{
     text-align: center;
     margin: 0 400px 0;
 }
 
-h3{color: #8C0303;}
-
-h6{color: #8C0303;
-    text-align: center;}
-
-#about{color: #bbcaf4;
-
+/*TITLES*/
+#about{
+    color:#056147;
+    margin: 35px auto 35px;
 }
 
+#mass{
+    color:#056147;
+    margin: 150px auto;
+}
+
+
 .vision{
-    color: #8C0303;
+    color:#f3cce7;
     font-style: italic;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     text-align: center;
+    line-height: 1.6;
 }
 
+.vision-section{
+background-color:#FC6C20;
+color: #f3cce7;
+}
 
 
 div{color: #a7baf2;
@@ -40,7 +53,7 @@ div{color: #a7baf2;
 
 
 
-.container {
+.philosophie {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     gap: 35px; /* Space between boxes */
@@ -49,17 +62,16 @@ div{color: #a7baf2;
   }
   
   .box{ 
-    background-color: #8C0303;
+    background-color:#f3cce7;
     width: 240px;
     height: auto;
     justify-content: space-between;
-    color: #a7baf2;
-    font-size: 18px;
+    color: black;
     border-radius: 8px; 
     text-align: center;
 }
 
-.title{color: #a7baf2;
+.title{color:#FC6C20;
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 10px 0;
@@ -67,19 +79,30 @@ div{color: #a7baf2;
 }
 
 .content{
+    color:#FC6C20;
     font-size: 18px;
     font-style: italic;
 }
 
 .werwirsind{ 
-    max-width: 80%;
-    height: auto;
-    display: center;
-    color: #8C0303;
-    text-align: center;
-    margin: auto;
+max-width: 80%;
+height: 70vh;
+margin-right: auto;
+margin-left: auto;
+margin-top: 250px;
+margin-bottom: 100px;
+color: #056147;
+line-height: 2;
+text-align: center;
 }
 
+
+
+
+.team-section{
+    color:#FC6C20;
+    background-color: #056147;
+}
 
 .teambox{
 border-radius: 12px;
@@ -87,13 +110,12 @@ display: flex;
 flex-wrap: wrap;
 max-width: 80%;
 font-size: 18px;
-color: #8C0303;
-background-color: #b4c7ff;
+background-color:#f3cce7;
 max-width: 1000px;
 height: auto;
 align-items: center;
 padding: 20px;
-margin: 40px auto; /* Center the box horizontally on the page */
+margin: 20px auto; /* Center the box horizontally on the page */
 }
 
 
@@ -108,24 +130,24 @@ margin: 40px auto; /* Center the box horizontally on the page */
 
   
   /* Styling the Text */
-  .about-text {
+  .team-text {
     flex: 1; /* Take up the remaining space */
   }
   
-  .about-text h3 {
+  .team-text h3 {
     font-size: 22px;
     margin: 0 0 10px;
-    color: #8C0303;
+    color:#FC6C20;
   }
   
-  .about-text p {
+  .team-text p {
+    color:#FC6C20;
     margin: 5px 0;
     font-size: 18px;
-    color: #8C0303;
   }
 
 .kontaktformular{
-    background-color: #8C0303;
+    background-color:#5B9BD5;
     height: auto;
     width: fit-content; /*ADJUSTED*/
     border-radius: 100px;
@@ -135,7 +157,7 @@ margin: 40px auto; /* Center the box horizontally on the page */
 }
 
 .kontaktformular a{
-    color:#a7baf2;
+    color: white;
     font-size: 24px;
     font-style: bold;
     text-decoration: none;
@@ -148,7 +170,7 @@ margin: 40px auto; /* Center the box horizontally on the page */
 }
 
   .contact{
-    color: #8C0303;
+    color:#5B9BD5;
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Space between boxes ADJUSTED */
@@ -158,7 +180,7 @@ margin: 40px auto; /* Center the box horizontally on the page */
   }
 
   .contactbox{
-    color: #8C0303;
+    color:#5B9BD5;
     width: 240px;
     height: auto;
     flex: 1 1 100px; /*adjusted*/
@@ -169,44 +191,124 @@ margin: 40px auto; /* Center the box horizontally on the page */
 }
 .contactbox a{
     text-decoration: none;
-    color: #8C0303;
+    color:#5B9BD5;
 }
 
 
 .kontaktformular:hover{
-    background-color: #680101;
+    background-color:#FC6C20;
     transform: scale(1.05);
 
 }
 
 
+/* General Responsive Styles */
+@media (max-width: 1024px) {
+    section {
+        padding: 50px; /* Reduce padding for smaller screens */
+    }
 
+    h1 {
+        margin: 0 auto 20px;
+        font-size: 24px; /* Adjust font size */
+    }
 
+    .vision {
+        max-width: 90%; /* Narrow the width for better fit */
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .werwirsind {
+        max-width: 90%;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .philosophie {
+        gap: 20px; /* Reduce space between boxes */
+    }
+
+    .box {
+        width: 100%; /* Make boxes full width */
+        font-size: 16px; /* Reduce font size */
+    }
+}
+
+/* Tablet and Mobile Adjustments */
 @media (max-width: 768px) {
     .teambox {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center-align the text */
+        flex-direction: column; /* Stack image and text */
+        text-align: center; /* Center-align content */
+        padding: 15px; /* Reduce padding */
     }
 
     .profile-img {
-        width: 100%; /* Full width for smaller screens */
-        max-width: 150px; /* Prevent images from becoming too large */
-        margin: 0 auto 20px; /* Center the image and add spacing below */
+        width: 150px; /* Scale down image size */
+        margin-bottom: 15px;
     }
 
-    .about-text {
-        text-align: center; /* Center-align text for mobile */
-        margin: 0; /* Remove any default margin */
-        font-size: 24px;
+    .team-text {
+        font-size: 14px;
     }
 
-    h1{
-        font-size: 22px;
-        margin: 0 10px 0;
+    .contact {
+        flex-direction: column; /* Stack contact boxes */
+        align-items: center; /* Center-align boxes */
     }
 
-    .kontaktformular a{
-    font-size: 20px;
+    .contactbox {
+        width: 80%; /* Make contact boxes full width */
+        font-size: 18px; /* Adjust font size */
+    }
 }
 
+/* Mobile Phones Adjustments */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Reduce global font size */
+    }
+
+    section {
+        padding: 20px; /* Minimize padding */
+    }
+
+    .vision {
+        font-size: 14px; /* Smaller font size for readability */
+        padding: 10px;
+    }
+
+    .werwirsind {
+        font-size: 14px;
+    }
+
+    .box {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .teambox {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .team-text p{
+        font-size: 16px;
+    }
+
+    .contactbox {
+        width: 80%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .kontaktformular {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .kontaktformular a {
+        font-size: 18px;
+    }
 }
