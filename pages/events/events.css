@@ -77,8 +77,7 @@ section{
   align-items: center;
   justify-content: center; 
   gap: 20px; /* Platz zwischen Text und Bild */
-  margin-bottom: 50px;
-
+  margin-bottom: 100px;
 }
 
 .space-text h1 {
@@ -201,12 +200,10 @@ background-color: #f5aade;
   }
 
   .container-creative-space {
-    display: flex;
     flex-direction: column; /* Inhalte untereinander */
-    align-items: center; /* Bild und Text zentriert horizontal ausrichten */
-    justify-content: center;
     text-align: left; /* Kein zentrierter Text */
     padding: 20px;
+    margin-bottom: 40px;
   }
 
   .space-text {
