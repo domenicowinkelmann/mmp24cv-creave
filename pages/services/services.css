@@ -23,7 +23,7 @@ h2 {
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +41,7 @@ section{
 
 
 .section-abos{
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .section-contact{
@@ -55,6 +55,7 @@ section{
     display: flex;
     align-items: center;
     height: 75%;
+    margin-bottom: 40px;
 }
 
 .abos-container h1 {
@@ -153,6 +154,24 @@ button:hover {
     color: #056147;
 }
 
+.container-arrows{
+    display: none;
+}
+
+@media (min-width: 440px) {
+    .section-abos{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .container-arrows{
+        display: inline-block;
+        bottom: 0;
+    }
+}
+
+
 /* Desktop */
 @media (min-width: 1000px) {
 
@@ -168,6 +187,7 @@ button:hover {
         justify-content: space-between; /* Abos glichmässig verteilen */
         flex-wrap: nowrap; /* Kein Umbruch, Abos bleiben in einer Reihe */
         height: 50%;
+        margin-bottom: 0;
     }
 
     .abo {
@@ -191,5 +211,9 @@ button:hover {
     .contact-form-container {
         max-width: 1000px; /* Gleiche Breite wie Abos */
         margin: 40px auto 0; /* Abstand nach oben und zentriert */
+    }
+
+    .container-arrows{
+        bottom: 20px;
     }
 }

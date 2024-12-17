@@ -76,6 +76,12 @@ h1{
     border-radius: 15px; 
     text-align: center;
     margin: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.box:hover{
+    transform: scale(1.05);
 }
 
 .title{
@@ -129,6 +135,13 @@ h1{
     align-items: center;
     padding: 20px;
     margin: 20px auto; /* Center the box horizontally on the page */
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.teambox:hover{
+    transform: scale(1.05);
 }
 
 
