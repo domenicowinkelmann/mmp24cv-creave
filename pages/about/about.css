@@ -19,7 +19,6 @@ section{
 
 h1{
     text-align: center;
-    margin: 0 400px 0;
 }
 
 /*TITLES*/
@@ -35,8 +34,7 @@ h1{
 
 
 .vision{
-    color:#f3cce7;
-    font-style: italic;
+    color:#FC6C20;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -44,65 +42,75 @@ h1{
     line-height: 1.6;
 }
 
-.vision-section{
-background-color:#FC6C20;
-color: #f3cce7;
-}
-
-
-div{color: #a7baf2;
-    padding: 20px;
-    margin: 20px;
-    border: #1b4001 4px;
-}
-
-
-
-.philosophie {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 35px; /* Space between boxes */
-    height: 100%;
-    justify-content: center;
-  }
-  
-  .box{ 
-    background-color:#f3cce7;
-    width: 240px;
-    height: auto;
-    justify-content: space-between;
-    color: black;
-    border-radius: 8px; 
-    text-align: center;
-}
-
-.title{color:#FC6C20;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-    text-align: center;
-}
-
-.content{
-    color:#FC6C20;
-    font-size: 18px;
+.vision p{
     font-style: italic;
 }
 
-.werwirsind{ 
-max-width: 80%;
-height: 70vh;
-margin-right: auto;
-margin-left: auto;
-margin-top: 250px;
-margin-bottom: 100px;
-color: #056147;
-line-height: 2;
-text-align: center;
+.vision-section{
+    background-color:#F7F3ED;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.philosophie {
+    display: flex;
+    /*flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    /*gap: 35px; /* Space between boxes */
+    height: 100%;
+    justify-content: center;
+}
+  
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color:#056147;
+    width: 100%;
+    padding: 100px 20px;
+    /* width: 240px; */
+    /* height: auto; */
+    border-radius: 15px; 
+    text-align: center;
+    margin: 20px;
+}
 
+.title{
+    color:#f3cce7;
+    /* font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center; */
+}
 
+.content{
+    color:#F7F3ED;
+    /* font-size: 18px; */
+}
+
+.section-werwirsind{
+    background-color: #f3cce7;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-werwirsind{ 
+    max-width: 80%;
+    /* height: 100%; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* margin-top: 250px; */
+    /* margin-bottom: 100px; */
+    color: #056147;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 .team-section{
     color:#FC6C20;
@@ -110,17 +118,17 @@ text-align: center;
 }
 
 .teambox{
-border-radius: 12px;
-display: flex;
-flex-wrap: wrap;
-max-width: 80%;
-font-size: 18px;
-background-color:rgb(243, 206, 232);
-max-width: 1000px;
-height: auto;
-align-items: center;
-padding: 20px;
-margin: 20px auto; /* Center the box horizontally on the page */
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    font-size: 18px;
+    background-color:rgb(243, 206, 232);
+    max-width: 1000px;
+    height: auto;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto; /* Center the box horizontally on the page */
 }
 
 
@@ -140,7 +148,6 @@ margin: 20px auto; /* Center the box horizontally on the page */
   }
   
   .team-text h3 {
-    font-size: 22px;
     margin: 0 0 10px;
     color:#FC6C20;
   }
@@ -148,7 +155,6 @@ margin: 20px auto; /* Center the box horizontally on the page */
   .team-text p {
     color:#FC6C20;
     margin: 5px 0;
-    font-size: 18px;
   }
 
 .kontaktformular{
@@ -207,6 +213,20 @@ margin: 20px auto; /* Center the box horizontally on the page */
 }
 
 
+
+@media (max-width: 1200px) {
+    .philosophie {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{ 
+        width: 80%;
+    }
+    .container-arrows{
+        display: none;
+    }
+}
+
 /* General Responsive Styles */
 @media (max-width: 1024px) {
     section {
@@ -214,35 +234,35 @@ margin: 20px auto; /* Center the box horizontally on the page */
     }
 
     h1 {
-        margin: 0 auto 20px;
-        font-size: 24px; /* Adjust font size */
+        margin: 0 auto 10px;
+        /* font-size: 24px; */
+    }
+
+    .vision-section{
+        padding-top: 100px;
     }
 
     .vision {
         max-width: 90%; /* Narrow the width for better fit */
-        font-size: 16px; /* Reduce font size */
     }
 
-    .werwirsind {
-        max-width: 90%;
-        margin-top: 50px;
-        margin-bottom: 150px;
-        line-height: 1.6;
-        font-size: 16px;
-    }
-
-    .philosophie {
-        gap: 20px; /* Reduce space between boxes */
-    }
-
-    .box {
-        width: 100%; /* Make boxes full width */
-        font-size: 16px; /* Reduce font size */
+    .philosophie{
+        margin-top: 10px;
+        padding-top: 0;
     }
 }
 
 /* Tablet and Mobile Adjustments */
 @media (max-width: 768px) {
+
+    .container-werwirsind{
+        margin-bottom: 40px;
+    }
+
+    p{
+        line-height: 27px;
+    }
+
     .teambox {
         flex-direction: column; /* Stack image and text */
         text-align: center; /* Center-align content */
@@ -267,6 +287,11 @@ margin: 20px auto; /* Center the box horizontally on the page */
         width: 80%; /* Make contact boxes full width */
         font-size: 18px; /* Adjust font size */
     }
+
+    .box{ 
+        width: 100%;
+    }
+
 }
 
 /* Mobile Phones Adjustments */

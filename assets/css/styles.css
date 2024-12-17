@@ -20,6 +20,26 @@ body {
     background-color: #F7F3ED;
 }
 
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #056147;
+    font-size: 30px;
+    @media screen and (min-width: 900px) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: 1300px) {
+      font-size: 50px;
+    }
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  p{
+    font-size: 16px;
+  }
 /* Header */
 /* .header {
     position: fixed;
