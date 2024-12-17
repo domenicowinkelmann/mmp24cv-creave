@@ -140,6 +140,7 @@ h1{
   /* Styling the Text */
   .team-text {
     flex: 1; /* Take up the remaining space */
+    padding-left: 20px;
   }
   
   .team-text h3 {
