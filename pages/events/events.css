@@ -68,12 +68,17 @@ section{
 
 /* Creative Space Section */
 .creative-space {
-  display: flex;
-  align-items: center; /* Vertikale Zentrierung des Inhalts */
-  justify-content: center; /* Optionale horizontale Zentrierung */
   background-color: #F3CCE7; /* Pink */
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.container-creative-space{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   gap: 20px; /* Platz zwischen Text und Bild */
+  margin-bottom: 50px;
+
 }
 
 .space-text h1 {
@@ -195,7 +200,7 @@ background-color: #f5aade;
     margin-bottom: 50px;
   }
 
-  .creative-space {
+  .container-creative-space {
     display: flex;
     flex-direction: column; /* Inhalte untereinander */
     align-items: center; /* Bild und Text zentriert horizontal ausrichten */
