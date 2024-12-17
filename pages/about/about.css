@@ -43,6 +43,10 @@ h1{
 }
 
 .vision p{
+    color:#FC6C20;
+}
+
+.vision p{
     font-style: italic;
 }
 
@@ -102,6 +106,10 @@ h1{
     line-height: 2;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.container-werwirsind p{
+    color: #056147;
 }
 
 .team-section{

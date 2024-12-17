@@ -169,6 +169,7 @@ section{
 
 .space-text p {
   margin-bottom: 15px;
+  color: white;
 }
 
 /* Steps Section */
@@ -202,4 +203,3 @@ section{
 .step p {
   margin: 0 0 10px 0;
 }
-

@@ -65,38 +65,107 @@ h1{
     }
   }
 
-  
-/* Header */
-/* .header {
-    position: fixed;
-    top: 0;
+footer{
+    /* height: 50vh; */
+    background-color: #F7F3ED;
     width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #F7F3ED;
-    z-index: 99;
-}
-
-.logo img{
-    height: 34px;
-}
-
-.nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual Sections */
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-title {
+    color: #7a7a7a; /* Light gray */
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     font-weight: bold;
   }
   
-  .nav a:hover {
-    color: #FC6C20;
-  } */
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #FC6C20; /* Red highlight on hover */
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .footer-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .footer-button:hover {
+    background-color: #FC6C20;
+    color: #fff;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-top: 60px;
+  }
+
+  .footer-bottom p{
+    font-size: 12px;
+    color: #7a7a7a;
+  }
+  
+  .footer-bottom .footer-link {
+    color: #bbb;
+  }
+  
+  .footer-bottom .footer-link:hover {
+    color: #fff;
+  }
+
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p{
+    color: #1e1e1e;
 }
 
 .header {
@@ -123,7 +192,7 @@ a {
 
 .nav a {
     font-size: 1rem;
-    color: #333;
+    color: #1e1e1e;
     font-weight: bold;
     transition: color 0.3s ease;
 }

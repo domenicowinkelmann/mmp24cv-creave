@@ -82,6 +82,10 @@ section{
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.abo p{
+    color: white;
+}
+
 .abo-image {
     display:block;
     margin: 0 auto;
