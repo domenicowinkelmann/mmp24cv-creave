@@ -57,8 +57,6 @@ h1{
 
 .philosophie {
     display: flex;
-    /*flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    /*gap: 35px; /* Space between boxes */
     height: 100%;
     justify-content: center;
 }
@@ -71,8 +69,6 @@ h1{
     background-color:#056147;
     width: 100%;
     padding: 100px 20px;
-    /* width: 240px; */
-    /* height: auto; */
     border-radius: 15px; 
     text-align: center;
     margin: 20px;
@@ -86,19 +82,14 @@ h1{
 
 .title{
     color:#f3cce7;
-    /* font-weight: bold;
-    margin: 0 0 10px 0;
-    text-align: center; */
 }
 
 .content{
     color:#F7F3ED;
-    /* font-size: 18px; */
 }
 
 .section-werwirsind{
     background-color: #f3cce7;
-    /* min-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,11 +98,6 @@ h1{
 
 .container-werwirsind{ 
     max-width: 80%;
-    /* height: 100%; */
-    /* margin-right: auto; */
-    /* margin-left: auto; */
-    /* margin-top: 250px; */
-    /* margin-bottom: 100px; */
     color: #056147;
     line-height: 2;
     text-align: center;
@@ -124,14 +110,10 @@ h1{
 }
 
 .teambox{
-    border-radius: 12px;
+    border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
-    font-size: 18px;
-    background-color:rgb(243, 206, 232);
+    background-color:#f3cce7;
     max-width: 1000px;
-    height: auto;
     align-items: center;
     padding: 20px;
     margin: 20px auto; /* Center the box horizontally on the page */
@@ -225,8 +207,6 @@ h1{
 
 }
 
-
-
 @media (max-width: 1200px) {
     .philosophie {
         flex-direction: column;
@@ -248,7 +228,6 @@ h1{
 
     h1 {
         margin: 0 auto 10px;
-        /* font-size: 24px; */
     }
 
     .vision-section{

@@ -53,6 +53,10 @@ section{
   /*flex: 1; /* Nimmt gleichmäßig Platz ein */
 }
 
+.intro-text h1{
+  text-align: start;
+}
+
 .intro-image img, .space-image img {
   width: 100%;
   height: auto; /* Passt die Höhe proportional an */
@@ -73,7 +77,6 @@ section{
 }
 
 .space-text h1 {
-  /* font-size: 40px; */
   margin-bottom: 20px;
   color: #FC6C20;
 }
@@ -115,7 +118,7 @@ section{
 .event-box {
   background-color: #FC6C20;
   color: #f3cce7;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   padding: 20px;
   width: 350px;
@@ -147,10 +150,11 @@ section{
   color: #FC6C20;
   border: none;
   padding: 12px 24px; /* Größerer Abstand für Touch-Geräte */
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s;
+  font-weight: bold;
 }
 
 .event-box button:hover {
@@ -167,8 +171,6 @@ background-color: #f5aade;
   .intro {
     flex-direction: column; /* Vertikale Anordnung */
     text-align: center;
-    gap: 20px;
-    /* height: 80vh; */
   }
 
   .intro-text {
@@ -178,13 +180,16 @@ background-color: #f5aade;
     justify-content: center; /* Vertikal zentrieren */
   }
 
+  .intro-text h1{
+    text-align: center;
+  }
+
   .intro-text p{
     text-align: center;
   }
 
   .intro-image img {
     width: auto; /* Verhindert zu starke Verkleinerung */
-    /*max-width: 70%; /* Bild hat maximal 70% der Breite */
     min-width: 300px; /* Mindestens 300px Breite */
     border-radius: 30px; /* Abgerundete Ecken bleiben */
     margin-bottom: 50px;
@@ -196,7 +201,6 @@ background-color: #f5aade;
     align-items: center; /* Bild und Text zentriert horizontal ausrichten */
     justify-content: center;
     text-align: left; /* Kein zentrierter Text */
-    gap: 20px;
     padding: 20px;
   }
 
@@ -214,7 +218,6 @@ background-color: #f5aade;
 
   .space-image img {
     width: auto; /* Verhindert zu starke Verkleinerung */
-    /*max-width: 70%; /* Bild hat maximal 70% der Breite */
     min-width: 300px; /* Mindestens 300px Breite */
     border-radius: 30px; /* Abgerundete Ecken bleiben */
   }
@@ -224,7 +227,6 @@ background-color: #f5aade;
 @media (max-width: 480px) {
   
   .intro {
-    /*height: auto; /* Dynamische Höhe basierend auf dem Inhalt */
     padding: 30px 10px; /* Weniger Platz für kleine Bildschirme */
   }
 
