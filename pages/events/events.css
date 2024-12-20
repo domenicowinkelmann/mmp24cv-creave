@@ -222,6 +222,9 @@ background-color: #f5aade;
     min-width: 300px; /* Mindestens 300px Breite */
     border-radius: 30px; /* Abgerundete Ecken bleiben */
   }
+  .container-arrows{
+    display: inline-block;
+  }
 }
 
 /* Sehr kleine Smartphones (bis max-width: 480px) */
@@ -229,6 +232,7 @@ background-color: #f5aade;
   
   .intro {
     padding: 30px 10px; /* Weniger Platz für kleine Bildschirme */
+    padding-top: 80px;
   }
 
   .intro-image img {
@@ -242,6 +246,9 @@ background-color: #f5aade;
     width: 100%; /* Vollbreite auch auf sehr kleinen Geräten */
     max-width: none;
     border-radius: 10;
+  }
+  .container-arrows{
+    display: none;
   }
 
 }
