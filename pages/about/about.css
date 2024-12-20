@@ -208,6 +208,19 @@ h1{
     transform: scale(1.05);
 
 }
+@media (min-width: 610px) and (max-height: 750px){
+    .container-arrows{
+        display: none;
+    }
+}
+
+@media (min-width: 610px) and (min-height: 750px){
+    .container-arrows{
+        display: inline-block;
+        bottom: 0;
+    }
+}
+
 
 @media (max-width: 1200px) {
     .philosophie {
@@ -219,19 +232,6 @@ h1{
     }
     .container-arrows{
         display: none;
-    }
-}
-
-@media (min-width: 610px) and (max-height: 750px){
-    .container-arrows{
-        display: none;
-    }
-}
-
-@media (min-width: 610px) and (min-height: 750px){
-    .container-arrows{
-        display: inline-block;
-        bottom: 0;
     }
 }
 
