@@ -41,123 +41,29 @@ body {
 }
 
 h1{
-    text-align: center;
-    margin-top: 10px;
-    color: #056147;
-    font-size: 30px;
-    @media screen and (min-width: 900px) {
-      font-size: 40px;
-    }
-    @media screen and (min-width: 1300px) {
-      font-size: 50px;
-    }
+  text-align: center;
+  margin-top: 10px;
+  color: #056147;
+  font-size: 30px;
+  @media screen and (min-width: 900px) {
+    font-size: 40px;
   }
-
-  h2{
-    margin-bottom: 20px;
+  @media screen and (min-width: 1300px) {
+    font-size: 50px;
   }
-
-  p{
-    font-size: 16px;
-    @media screen and (min-width: 1024px) {
-        font-size: 18px;
-
-    }
-  }
-
-footer{
-    /* height: 50vh; */
-    background-color: #F7F3ED;
-    width: 100%;
 }
 
-/* Footer Styles */
-.footer {
-    background-color: #1e1e1e; /* Dark background */
-    color: #fff; /* White text */
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Individual Sections */
-  .footer-section {
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  .footer-title {
-    color: #7a7a7a; /* Light gray */
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .footer-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-link:hover {
-    color: #FC6C20; /* Red highlight on hover */
-  }
-  
-  .footer-description {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ddd;
-  }
-  
-  .footer-button {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .footer-button:hover {
-    background-color: #FC6C20;
-    color: #fff;
-  }
-  
-  /* Footer Bottom Section */
-  .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #333;
-    padding-top: 15px;
-    padding-bottom: 0;
-    margin-top: 60px;
-  }
+h2{
+  margin-bottom: 20px;
+}
 
-  .footer-bottom p{
-    font-size: 12px;
-    color: #7a7a7a;
-  }
-  
-  .footer-bottom .footer-link {
-    color: #bbb;
-  }
-  
-  .footer-bottom .footer-link:hover {
-    color: #fff;
-  }
+p{
+  font-size: 16px;
+  @media screen and (min-width: 1024px) {
+      font-size: 18px;
 
+  }
+}
 
 a {
     text-decoration: none;
@@ -273,7 +179,6 @@ p{
     }
 }
 
-
 .container-arrows{
     position: absolute;
     display: inline-block;
@@ -283,4 +188,116 @@ p{
     color: #FC6C20;
     text-decoration: none;
     animation: moveUpDown 2s infinite; /* 1 second duration, loops infinitely */
-} 
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #1e1e1e; /* Dark background */
+  color: #ddd; /* White text */
+  padding: 40px;
+  width: 100%;
+  @media screen and (min-width: 750px) {
+    padding: 60px 40px 40px 40px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-section-middle{
+  display: flex;
+  @media screen and (min-width: 750px) {
+    justify-content: center;
+  }
+}
+
+.footer-section-right{
+  display: flex;
+  @media screen and (min-width: 750px) {
+    justify-content: flex-end;
+  }
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 750px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-title {
+  color: #7a7a7a; /* Light gray */
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #FC6C20;
+}
+
+.footer-adress{
+  color: #ddd;
+}
+
+.footer-button {
+  display: inline-block;
+  background-color: #ddd;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-button:hover {
+  background-color: #FC6C20;
+  color: #fff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-top: 30px;
+  @media screen and (min-width: 750px) {
+    margin-top: 60px;
+  }
+}
+
+.footer-bottom p{
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.footer-bottom .footer-link {
+  color: #bbb;
+}
+
+.footer-bottom .footer-link:hover {
+  color: #fff;
+}
