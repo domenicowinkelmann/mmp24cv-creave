@@ -14,18 +14,6 @@
   }
 }
 
-
-/* h2{
-  font-size: 30px;
-  @media screen and (min-width: 900px) {
-    font-size: 40px;
-  }
-  @media screen and (min-width: 1300px) {
-    font-size: 50px;
-  }
-} */
-
-
 section{
   min-height: 100vh;
   padding: 20px;
@@ -37,6 +25,17 @@ section{
   }
   @media screen and (min-width: 1500px) {
     padding: 90px 120px;
+  }
+}
+
+
+h2{
+  font-size: 30px;
+  @media screen and (min-width: 900px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1300px) {
+    font-size: 50px;
   }
 }
 
